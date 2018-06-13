@@ -1,1 +1,1 @@
-# This is the code that makes the sword sprite point in the direction of the mouse.
+# This is the code that makes the wall placer place the walls relative to the location of the floors already placed.

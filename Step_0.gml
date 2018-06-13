@@ -1,7 +1,33 @@
-//Direct Towards Mouse
-image_angle = point_direction(x+21,y+5,mouse_x,mouse_y);
+//Room Speed Again
+room_speed = 32000;
+//Store the targets id number
+target = instance_place(x, y, obj_floor);
+//Check for neighbour floors and place walls
+if(instance_exists(target))
+{
+	if(!place_meeting(x+makesWallsNotDumb, y, obj_floor)) { instance_create_layer(x+makesWallsNotDumb, y, layer, obj_wall) };
+	if(!place_meeting(x-makesWallsNotDumb, y, obj_floor)) { instance_create_layer(x-makesWallsNotDumb, y, layer, obj_wall) };
+	if(!place_meeting(x, y+makesWallsNotDumb, obj_floor)) { instance_create_layer(x, y+makesWallsNotDumb, layer, obj_wall) };
+	if(!place_meeting(x, y-makesWallsNotDumb, obj_floor)) { instance_create_layer(x, y-makesWallsNotDumb, layer, obj_wall) };
+}
 
-if (global.weapNum == 0) sprite_index = spr_sword;
-if (global.weapNum == 1) sprite_index = spr_greatsword;
-if (global.weapNum == 2) sprite_index = spr_spear;
-if (global.weapNum == 3) sprite_index = spr_hammer;
+if(x < start_x)
+{
+	x = start_x;
+}
+if(x == stop_x)
+{
+	y += 32;
+	x = 0;
+}
+else
+{
+	x += 32;
+}
+
+if(y > stop_y)
+{
+	room_speed = 60;
+	instance_destroy();
+}
+

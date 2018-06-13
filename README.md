@@ -1,1 +1,1 @@
-# This is the code that sends the player to the next room if he/she destroys the portal.
+# This is the code that plays or stops the song depending on the current room.

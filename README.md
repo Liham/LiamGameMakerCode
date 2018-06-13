@@ -1,1 +1,1 @@
-# Liam Game Maker Code For Poggo Game
+# This is the code that creates the grid that the enemies use to find the best path to the player.

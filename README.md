@@ -1,1 +1,1 @@
-# Liam Game Maker Code For Poggo Game
+# This is the code that simply destroys the melee object right after it has been draw.

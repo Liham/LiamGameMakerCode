@@ -1,1 +1,1 @@
-# This is the code that makes the game music play when playing the game, and stops the menu music when not in the menu.
+# This is the code that randomly changes the floor sprite of the floor object so that the floor of every stage is different.

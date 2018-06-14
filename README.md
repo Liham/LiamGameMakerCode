@@ -1,1 +1,1 @@
-# Liam Game Maker Code For Poggo Game
+# This is the code that makes the snake enemy follow the player.

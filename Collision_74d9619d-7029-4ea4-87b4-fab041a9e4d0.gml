@@ -1,0 +1,1 @@
+hp = hp - global.dmg;

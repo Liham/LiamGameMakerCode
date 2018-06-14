@@ -1,5 +1,6 @@
-menu[0] = "Play";
-menu[1] = "Quit";
+startMenu[0] = "Start";
+startMenu[1] = "Weapon Select";
+startMenu[2] = "Back";
 
-space = 64;
-mpos = 0;
+startSpace = 64;
+startmpos = 0;
